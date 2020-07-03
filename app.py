@@ -10,7 +10,6 @@ app.config['DEBUG'] = True
 def index():
     return render_template("index.html")
 
-
 @app.route("/api/v1.0/precipitation")
 def prcp():
     return jsonify(prcp_df.to_dict())
