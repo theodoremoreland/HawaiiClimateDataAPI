@@ -24,7 +24,7 @@ For this project, I used Python to perform analysis on a climate database before
 
 - - -
 
-## Climate API
+# Climate API
 
 ### Home 
 <img src="presentation/1.PNG" width="900">
