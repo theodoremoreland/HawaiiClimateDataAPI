@@ -16,8 +16,6 @@ For this project, I used Python to perform analysis on a climate database before
 
 ## Climate API
 
-A Flask API based on the queries that you have just developed.
-
 ## Home 
 <img src="presentation/1.PNG" width="900">
 
