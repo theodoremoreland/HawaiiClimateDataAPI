@@ -47,36 +47,28 @@ To begin, use Python and SQLAlchemy to do basic climate analysis and data explor
 
 ## Climate API
 
-Now that you have completed your initial analysis, design a Flask API based on the queries that you have just developed.
+A Flask API based on the queries that you have just developed.
 
-* Use FLASK to create your routes.
+## Home 
+<img src="presentation/1.PNG" width="600">
 
-### Routes
+## /api/v1.0/precipitation
 
-* `/`
+<img src="presentation/2.PNG" width="600">
 
-  * Home page.
 
-  * List all routes that are available.
+## /api/v1.0/stations
+Returns a JSON list of stations from the dataset.
 
-* `/api/v1.0/precipitation`
+<img src="presentation/3.PNG" width="600">
 
-  * Convert the query results to a Dictionary using `date` as the key and `prcp` as the value.
+## /api/v1.0/tobs
+Returns a JSON list of Temperature Observations (tobs) for the previous year.
 
-  * Return the JSON representation of your dictionary.
+<img src="presentation/4.PNG" width="600">
 
-* `/api/v1.0/stations`
+## /api/v1.0/start-date AND /api/v1.0/start-date/end-date
+Returns a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
 
-  * Return a JSON list of stations from the dataset.
+<img src="presentation/5.PNG" width="600">
 
-* `/api/v1.0/tobs`
-  * query for the dates and temperature observations from a year from the last data point.
-  * Return a JSON list of Temperature Observations (tobs) for the previous year.
-
-* `/api/v1.0/<start>` and `/api/v1.0/<start>/<end>`
-
-  * Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
-
-  * When given the start only, calculate `TMIN`, `TAVG`, and `TMAX` for all dates greater than and equal to the start date.
-
-  * When given the start and the end date, calculate the `TMIN`, `TAVG`, and `TMAX` for dates between the start and end date inclusive.
