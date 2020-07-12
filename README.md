@@ -4,6 +4,11 @@ For this project, I used Python to perform analysis on a climate database before
 
 *This project was for an assignment at Washington University's Data Analytics Boot Camp (2019).*
 
+## Sections
+- [Analysis](#Analysis)
+- [API](#Climate-API)
+
+## Analysis
 ### Precipitation summary statistics (within 12 month range)
 
 <img src="presentation/plot1.png" width="900">
