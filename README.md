@@ -1,6 +1,6 @@
 # HawaiiClimateDataAPI
 
-For this project, I used Python to perform analysis on a climate database before mapping said database to a custom built REST-API. I used Python and SQLAlchemy to do climate analysis and exploration on a hawaii.sqlite database, all analysis completed using SQLAlchemy ORM queries, Pandas, and Matplotlib. The REST-API was developed using vanilla Flask.
+For this project, I used Python to perform analysis on a climate database before mapping said database to a custom built REST-API. I used Python and SQLAlchemy to do climate analysis and exploration on a hawaii.sqlite database, all analysis was completed using SQLAlchemy ORM queries, Pandas, and Matplotlib. The REST-API was developed using vanilla Flask.
 
 *This project was for an assignment at Washington University's Data Analytics Boot Camp (2019).*
 
