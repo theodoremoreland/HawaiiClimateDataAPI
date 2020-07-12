@@ -88,13 +88,12 @@ tobs_df = pd.DataFrame(tobs_last_12_months)
 
 # Sort the dataframe by date
 tobs_df_clean = tobs_df.copy().fillna(value=0)
-tobs_df_sort = tobs_df_clean.sort_values("date", ascending=True).iloc[0:]
+tobs_df_sorted = tobs_df_clean.sort_values("date", ascending=True).iloc[0:]
 
 station_df = pd.DataFrame([station_activity])
 prcp_df = df3.reset_index()
-tobs_df2 = tobs_df_sort
 
-def calc_temps2(start_date, end_date):
+def calc_temps_dict(start_date, end_date):
     # the same as "calc_temps", but returns value(s) in Dictionary format.
     x = session.query(func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)).filter(Measurement.date >= start_date).filter(Measurement.date <= end_date).all()
     y = pd.DataFrame([x])
