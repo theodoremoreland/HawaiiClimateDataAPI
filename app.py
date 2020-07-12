@@ -1,5 +1,4 @@
-
-from utility import calc_temps, calc_temps2, prcp_df, station_df, tobs_df2, last_date
+from scripts.utility import calc_temps, calc_temps2, prcp_df, station_df, tobs_df2, last_date
 import pandas as pd
 from flask import Flask, render_template, jsonify
 

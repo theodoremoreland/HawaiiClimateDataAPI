@@ -14,13 +14,9 @@ from sqlalchemy import create_engine, func, inspect
 # Third party
 import numpy as np
 import pandas as pd
-from flask import Flask
 
 
-app = Flask(__name__)
-app.config['DEBUG'] = True
-
-engine = create_engine("sqlite:///Resources/hawaii.sqlite", connect_args={'check_same_thread': False})
+engine = create_engine("sqlite:///resources/hawaii.sqlite", connect_args={'check_same_thread': False})
 
 # reflect an existing database into a new model
 Base = automap_base()
@@ -104,7 +100,3 @@ def calc_temps2(start_date, end_date):
     y = pd.DataFrame([x])
     z = y.to_dict()
     return z
-
-
-if __name__ == '__main__':
-    app.run()
