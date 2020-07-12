@@ -1,8 +1,7 @@
-## Climate Analysis and Exploration
+# HawaiiClimateDataAPI
 
-To begin, use Python and SQLAlchemy to do basic climate analysis and data exploration of your climate database. All of the following analysis should be completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
+For this project, I used Python to perform analysis on a climate database before mapping said database to custom built REST-API. I used Python and SQLAlchemy to do climate analysis and exploration on a hawaii.sqlite database, all analysis completed using SQLAlchemy ORM queries, Pandas, and Matplotlib. The REST-API was developed using vanilla Flask.
 
-* Use the provided starter notebook and hawaii.sqlite files to complete your climate analysis and data exploration.
 
 ### Precipitation Analysis
 
