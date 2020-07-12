@@ -50,25 +50,30 @@ To begin, use Python and SQLAlchemy to do basic climate analysis and data explor
 A Flask API based on the queries that you have just developed.
 
 ## Home 
-<img src="presentation/1.PNG" width="800">
+<img src="presentation/1.PNG" width="900">
 
 ## /api/v1.0/precipitation
 
-<img src="presentation/2.PNG" width="800">
+<img src="presentation/2.PNG" width="700">
 
 
 ## /api/v1.0/stations
 Returns a JSON list of stations from the dataset.
 
-<img src="presentation/3.PNG" width="800">
+<img src="presentation/3.PNG" width="700">
 
 ## /api/v1.0/tobs
 Returns a JSON list of Temperature Observations (tobs) for the previous year.
 
-<img src="presentation/4.PNG" width="800">
+<img src="presentation/4.PNG" width="700">
 
-## /api/v1.0/start-date AND /api/v1.0/start-date/end-date
+
+## /api/v1.0/start-date
 Returns a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
 
-<img src="presentation/5.PNG" width="800">
+<img src="presentation/5.PNG" width="700">
 
+
+## /api/v1.0/start-date/end-date
+
+<img src="presentation/6.PNG" width="700">
