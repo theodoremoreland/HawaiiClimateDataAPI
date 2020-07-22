@@ -72,47 +72,9 @@ tobs_df_clean = tobs_df.copy().fillna(value=0)
 tobs_df_sorted = tobs_df_clean.sort_values("date", ascending=True).iloc[0:]
 
 
-def calc_prcp(start_date, end_date):
-    """Calculates the total amount of rainfall per weather station for between dates specified.
-    Sorts in descending order by precipitation amount and lists the station, name, latitude, longitude, and elevation
-    """
-    station_prcp = session.query(Measurement.station, func.sum(Measurement.prcp))\
-        .group_by(Measurement.station).order_by(func.sum(Measurement.prcp).desc())\
-            .filter(Measurement.date >= start_date)\
-                .filter(Measurement.date <= end_date)\
-                    .all()
-    
-    for i in station_prcp:
-        station = i[0]
-        value = session.query(Station.station
-            , Station.name
-            , Station.latitude
-            , Station.longitude
-            , Station.elevation
-            , func.sum(Measurement.prcp))\
-                .filter(Measurement.date >= start_date)\
-                    .filter(Measurement.date <= end_date)\
-                        .filter(Measurement.station == station)\
-                            .filter(Station.station == station)\
-                                .all()
-        print(value)
-
-
-def calc_temps(start_date, end_date):
+def calc_temps_dict(start_date, end_date):
     """Returns the minimum, average, and maximum temperatures for that range of dates
     This function will accept start date and end date in the format '%Y-%m-%d' 
-    """
-    value = session.query(func.min(Measurement.tobs)
-        , func.avg(Measurement.tobs)
-        , func.max(Measurement.tobs))\
-            .filter(Measurement.date >= start_date)\
-                .filter(Measurement.date <= end_date)\
-                    .all()
-    return value
-
-
-def calc_temps_dict(start_date, end_date):
-    """The same as "calc_temps", but returns value(s) in Dictionary format.
     """
     x = session.query(func.min(Measurement.tobs)
         , func.avg(Measurement.tobs)
