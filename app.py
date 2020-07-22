@@ -3,7 +3,10 @@ import pandas as pd
 from flask import Flask, render_template, jsonify
 
 # Custom
-from scripts.utility import calc_temps_dict, prcp_df, station_df, tobs_df_sorted, last_date
+from scripts.utility import (calc_temps_dict
+                            , prcp_last_12_months_df, station_df
+                            , tobs_df_sorted
+                            , last_date)
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -15,7 +18,7 @@ def index():
 
 @app.route("/api/v1.0/precipitation")
 def precipitation_endpoint():
-    return jsonify(prcp_df.to_dict())
+    return jsonify(prcp_last_12_months_df.to_dict())
 
 
 @app.route("/api/v1.0/stations")
