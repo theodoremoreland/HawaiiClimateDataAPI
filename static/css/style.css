@@ -1,44 +1,146 @@
 html {
-    color: #ffffff;
-
+  position: relative;
+    padding: 0;
+    margin: 0;
     font-family: arial, sans-serif;
-    font-size: 1.7em;
-    font-weight: bold;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    height: 100%;
+    width: 100%;
 }
 
 body {
-    background-color: rgb(0, 0, 0);
-    background-image: url(../images/background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(219, 222, 227);
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: rgb(56, 59, 80);
+  text-align: left;
+}
+
+h2 {
+  color: rgb(56, 59, 80);
+}
+
+ul, li {
+  padding: 0;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: calc(100% / 3);
+  background-color: rgba(0, 0, 0, 0.35);
+  list-style: none;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+li:nth-of-type(1) {
+  background-image: url("/static/images/pic1.jpg");
+
+}
+
+li:nth-of-type(2) {
+  background-image: url("/static/images/pic2.jpg");
+  
+}
+
+li:nth-of-type(3) {
+  background-image: url("/static/images/pic3.jpg");
+  
+}
+
+button {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  outline: transparent;
+  background-color: transparent;
+  border: 2px solid rgb(51, 57, 238);
+  border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(229, 233, 239);
 }
 
 
-h1, h2 {
-    color: rgb(141, 198, 255);
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  font-size: 0.8rem;
+  background-color: rgb(51, 57, 238);
 }
 
+.middle p {
+  padding: 0px 40px;
+}
 
-/* unvisited link */
-a:link {
-    color: rgb(0, 255, 38);
-  }
-  
-  /* visited link */
-  a:visited {
-    color: rgb(7, 255, 7);
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: rgb(7, 255, 7);
-  }
-  
-  /* selected link */
-  a:active {
-    color: rgb(7, 255, 7);
-  }
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(1.15);
+  background-color: rgb(51, 57, 238);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+button:hover ~ .overlay {
+  opacity: 0.2;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+

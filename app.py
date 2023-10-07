@@ -36,6 +36,7 @@ def tobs_endpoint():
 def date_range_endpoint(start, end):
     start = str(start)
     end = str(end)
+
     return jsonify(calc_temps_dict(start, end))
 
 
