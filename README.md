@@ -9,6 +9,7 @@ For this project, I used Python to perform analysis on a climate database before
 - HTML
 - CSS
 - Jupyter Notebook
+- Matplotlib
 - Pandas
 - Flask
 - Black
