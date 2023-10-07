@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>
-        Hawaii Climate Data API
-    </title>
-
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
-
-<body>
-    <h1>Welcome to the Hawaii Climate Data API!</h1>
-    <p>This API uses both static and dynamic endpoints. All returns are in JSON format. Read below for more details.</p>
-    <h2>Static Endpoints:</h2>
-    <p>To access a static endpoint, input one of the URLs below:</p>
-    <ul>
-        <li><a href="/api/v1.0/precipitation">"/api/v1.0/precipitation"</a></li>
-        Will return all of the precipitation data.
-        <hr>
-        <li><a href="/api/v1.0/stations">"/api/v1.0/stations"</a></li>
-        Will return the ID of every weather station included in the data.
-        <hr>
-        <li><a href="/api/v1.0/tobs">"/api/v1.0/tobs"</a></li>
-        Will return all of the temperature observation data.
-    </ul>
-
-    <h2>Dynamic Endpoints:</h2>
-    <p>In order to access a dynamic endpoint, simply add a date to the end of the "/api/v1.0/" URL. For example:
-        <a href="/api/v1.0/2016-04-16">"/api/v1.0/2016-04-16"</a> will return the minimum, maximum, and average
-        temperature between the
-        date provided (e.g. 2016-04-16) and the most recent temperature observation. All dates must be in the %Y-%m-%d
-        format.
-    </p>
-    <p>Additonally, adding another date to the end of the URL will limit the observation range
-        (e.g. <a href="/api/v1.0/2016-04-16/2017-04-16">"/api/v1.0/2016-04-16/2017-04-16"</a> will return only data
-        between 2016-04-16
-        and 2017-04-16). All dates must be in the %Y-%m-%d format.
-    </p>
-</body>
-
-
-
+    <head>
+        <title>
+            Hawaii Climate Data API
+        </title>
+        <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+    <body>
+        <h1>Welcome to the Hawaii Climate Data API!</h1>
+        <p>This API uses both static and dynamic endpoints. All returns are in JSON format. Read below for more details.</p>
+        <h2>Static Endpoints:</h2>
+        <p>To access a static endpoint, input one of the URLs below:</p>
+        <ul>
+            <li>
+                <a href="/api/v1.0/precipitation">"/api/v1.0/precipitation"</a>
+            </li>
+            Will return all of the precipitation data.
+            <hr>
+            <li>
+                <a href="/api/v1.0/stations">"/api/v1.0/stations"</a>
+            </li>
+            Will return the ID of every weather station included in the data.
+            <hr>
+            <li>
+                <a href="/api/v1.0/tobs">"/api/v1.0/tobs"</a>
+            </li>
+            Will return all of the temperature observation data.
+        </ul>
+        <h2>Dynamic Endpoints:</h2>
+        <p>In order to access a dynamic endpoint, simply add a date to the end of the "/api/v1.0/" URL. For example:
+            <a href="/api/v1.0/2016-04-16">"/api/v1.0/2016-04-16"</a> will return the minimum, maximum, and average
+            temperature between the
+            date provided (e.g. 2016-04-16) and the most recent temperature observation. All dates must be in the %Y-%m-%d
+            format.
+        </p>
+        <p>Additionally, adding another date to the end of the URL will limit the observation range
+            (e.g. <a href="/api/v1.0/2016-04-16/2017-04-16">"/api/v1.0/2016-04-16/2017-04-16"</a> will return only data
+            between 2016-04-16
+            and 2017-04-16). All dates must be in the %Y-%m-%d format.
+        </p>
+    </body>
 </html>

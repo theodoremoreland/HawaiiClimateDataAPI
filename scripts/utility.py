@@ -84,4 +84,5 @@ def calc_temps_dict(start_date, end_date):
                     .all()
     y = pd.DataFrame([x])
     z = y.to_dict()
+
     return z
