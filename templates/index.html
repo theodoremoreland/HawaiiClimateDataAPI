@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Hawaii Climate Data API
-        </title>
-        <link rel="stylesheet" href="../static/css/style.css">
-    </head>
-    <body>
-        <!-- 
+
+<head>
+    <title>
+        Hawaii Climate Data API
+    </title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <!-- 
         <h2>Static Endpoints</h2>
         <p>To access a static endpoint, input one of the URLs below</p> -->
-        <ul>
-            <li>
-                
-                <button type="button">
-                    <a href="/api/v1.0/precipitation">Precipitation data</a>
-                </button>
-                <div class="overlay"></div>
-            </li>
-            <li>
-                <button  type="button">
-                    <a href="/api/v1.0/stations">Weather station IDs</a>
-                </button>
-                <div class="overlay"></div>
-            </li>
-            <li>
-                <button  type="button">
-                    <a href="/api/v1.0/tobs">Temperature observation data</a>
-                </button>
-                <div class="overlay"></div>
-            </li>
-        </ul>
-        <div class="intro">
-            <h1>Hawaii Climate Data API</h1>
-            <p>This API uses both static and dynamic endpoints. All returns are in JSON format.</p>
-        </div>
-        <!-- <section class="middle">
+    <ul>
+        <li>
+
+            <button type="button">
+                <a href="/api/v1.0/precipitation">Precipitation data</a>
+            </button>
+            <div class="overlay"></div>
+        </li>
+        <li>
+            <button type="button">
+                <a href="/api/v1.0/stations">Weather station IDs</a>
+            </button>
+            <div class="overlay"></div>
+        </li>
+        <li>
+            <button type="button">
+                <a href="/api/v1.0/tobs">Temperature observation data</a>
+            </button>
+            <div class="overlay"></div>
+        </li>
+    </ul>
+    <div class="intro">
+        <h1>Hawaii Climate Data API</h1>
+        <p>This API uses both static and dynamic endpoints. All returns are in JSON format.</p>
+        <p>Supply a date or date range to API's root path (<code>/api/v1.0</code>) to filter data by date. For example:
+            <a id="dynamic-example" href="/api/v1.0/2016-04-16/2017-04-16">/api/v1.0/2016-04-16/2017-04-16</a>
+        </p>
+    </div>
+    <!-- <section class="middle">
             <p><a href="/api/v1.0/2016-04-16">/api/v1.0/2016-04-16</a> will return the minimum, maximum, and average
                 temperature between the
                 date provided (e.g. 2016-04-16) and the most recent temperature observation. adding another date to the end of the URL will limit the observation range
@@ -44,5 +49,6 @@
                 and 2017-04-16).
             </p>
             </section> -->
-    </body>
+</body>
+
 </html>
