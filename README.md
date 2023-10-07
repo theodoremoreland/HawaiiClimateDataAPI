@@ -15,8 +15,43 @@ For this project, I used Python to perform analysis on a climate database before
 - VS Code
 
 ## Sections
-- [Analysis](#Analysis)
 - [API](#Climate-API)
+- [Analysis](#Analysis)
+
+# Climate API
+
+### Home (Desktop)
+<img src="presentation/1.PNG" width="900">
+
+### Home #2 (Mouseover - Desktop)
+
+<img src="presentation/2.PNG" width="700">
+
+### Home (Mobile)
+
+<img src="presentation/3.PNG" width="300">
+
+### /api/v2.0/precipitation
+Returns precipitation data for the most recent 12 months of dataset.
+
+<img src="presentation/4.PNG" width="700">
+
+### /api/v2.0/stations
+Return station data.
+
+<img src="presentation/5.PNG" width="700">
+
+### /api/v2.0/tobs
+Returns temperature observation data (tobs) from 12 most recent months of dataset.
+
+<img src="presentation/6.PNG" width="700">
+
+### /api/v2.0/aggregate/start-date/end-date
+Returns minimum temperature, average temperature, and the max temperature for a given start or start-end range.
+
+<img src="presentation/7.png" width="700">
+
+- - -
 
 ## Analysis
 ### Precipitation summary statistics (within 12 month range)
@@ -31,33 +66,3 @@ For this project, I used Python to perform analysis on a climate database before
 <img src="presentation/plot2.png" width="900">
 
 <img src="presentation/plot3.png" width="300">
-
-- - -
-
-# Climate API
-
-### Home 
-<img src="presentation/1.PNG" width="900">
-
-### /api/v2.0/precipitation
-
-<img src="presentation/2.PNG" width="700">
-
-### /api/v2.0/stations
-Returns a JSON list of stations from the dataset.
-
-<img src="presentation/3.PNG" width="700">
-
-### /api/v2.0/tobs
-Returns a JSON list of Temperature Observations (tobs) for the most recent 12 months of dataset.
-
-<img src="presentation/4.PNG" width="700">
-
-### /api/v2.0/start-date
-Returns a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
-
-<img src="presentation/5.PNG" width="700">
-
-### /api/v2.0/start-date/end-date
-
-<img src="presentation/6.PNG" width="700">
