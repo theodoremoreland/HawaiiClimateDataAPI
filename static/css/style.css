@@ -78,7 +78,6 @@ li:nth-of-type(3) {
 }
 
 button {
-  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,22 +89,26 @@ button {
   border-radius: 4px;
 }
 
-button:hover {
+a {
+  z-index: 2;
+  text-decoration: none;
+}
+
+a>button {
+  font-size: 1rem;
+  color: rgb(229, 233, 239);
+}
+
+a>button:hover {
   cursor: pointer;
   filter: brightness(1.15);
   background-color: rgb(51, 57, 238);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
-button:hover~.overlay {
+a:hover~.overlay {
   opacity: 0.2;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-}
-
-button a {
-  text-decoration: none;
-  font-size: 1rem;
-  color: rgb(229, 233, 239);
 }
 
 p {
