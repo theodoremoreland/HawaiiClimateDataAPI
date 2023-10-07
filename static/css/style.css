@@ -22,11 +22,7 @@ body {
 h1 {
   margin: 0;
   padding: 0;
-  color: rgb(56, 59, 80);
-  text-align: left;
-}
-
-h2 {
+  font-size: 1.2rem;
   color: rgb(56, 59, 80);
 }
 
@@ -36,12 +32,13 @@ li {
 }
 
 ul {
+  order: 2;
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70%;
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -57,7 +54,7 @@ li {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: calc(100% / 3);
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.35);
   list-style: none;
   background-position: center;
@@ -112,8 +109,9 @@ a:hover~.overlay {
 }
 
 p {
+  font-size: 0.8rem;
   margin: 0;
-  padding: 7px 0px;
+  padding: 7px 15px;
 }
 
 .intro {
@@ -143,4 +141,24 @@ a#dynamic-example {
 
 a#dynamic-example:hover {
   opacity: 0.8;
+}
+
+@media screen and (min-width: 760px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  ul {
+    order: initial;
+    flex-direction: row;
+    height: 70%;
+  }
+
+  li {
+    width: calc(100% / 3);
+  }
 }

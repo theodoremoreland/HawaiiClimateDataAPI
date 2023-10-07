@@ -4,6 +4,16 @@ For this project, I used Python to perform analysis on a climate database before
 
 *This project was for an assignment at Washington University's Data Analytics Boot Camp (2019).*
 
+## Technologies used
+- Python
+- HTML
+- CSS
+- Jupyter Notebook
+- Pandas
+- Flask
+- Black
+- VS Code
+
 ## Sections
 - [Analysis](#Analysis)
 - [API](#Climate-API)
@@ -39,7 +49,7 @@ Returns a JSON list of stations from the dataset.
 <img src="presentation/3.PNG" width="700">
 
 ### /api/v2.0/tobs
-Returns a JSON list of Temperature Observations (tobs) for the previous year.
+Returns a JSON list of Temperature Observations (tobs) for the most recent 12 months of dataset.
 
 <img src="presentation/4.PNG" width="700">
 
