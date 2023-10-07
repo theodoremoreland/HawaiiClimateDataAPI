@@ -96,14 +96,16 @@ a>button {
   color: rgb(229, 233, 239);
 }
 
-a>button:hover {
+a>button:hover,
+a>button:active {
   cursor: pointer;
   filter: brightness(1.15);
   background-color: rgb(51, 57, 238);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
-a:hover~.overlay {
+a:hover~.overlay,
+a:active~.overlay {
   opacity: 0.2;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
@@ -139,7 +141,8 @@ a#dynamic-example {
   color: rgb(51, 57, 238);
 }
 
-a#dynamic-example:hover {
+a#dynamic-example:hover,
+a#dynamic-example:active {
   opacity: 0.8;
 }
 
