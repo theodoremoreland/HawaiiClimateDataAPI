@@ -2,11 +2,11 @@
 from flask import Flask, render_template, jsonify
 
 # Custom
-from scripts import last_date
-from scripts.calculate_temp import calc_temp
-from scripts.get_station_data import get_station_data
-from scripts.get_prcp_data import get_prcp_data
-from scripts.get_tobs_data import get_tobs_data
+from modules import last_date
+from modules.calculate_temp import calc_temp
+from modules.get_station_data import get_station_data
+from modules.get_prcp_data import get_prcp_data
+from modules.get_tobs_data import get_tobs_data
 
 app = Flask(__name__)
 app.config["DEBUG"] = True

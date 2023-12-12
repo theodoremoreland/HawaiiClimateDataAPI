@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Hawaii Climate Data API
+        </title>
+        <link rel="icon" type="image/png" href="../static/images/hawaii.png">
+        <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+
+    <body>
+        <ul>
+            <li>
+                <a href="/api/v2.0/precipitation">
+                    <button type="button">
+                        Precipitation data
+                    </button>
+                </a>
+                <div class="overlay"></div>
+            </li>
+            <li>
+                <a href="/api/v2.0/stations">
+                    <button type="button">
+                        Weather station IDs
+                    </button>
+                </a>
+                <div class="overlay"></div>
+            </li>
+            <li>
+                <a href="/api/v2.0/tobs">
+                    <button type="button">
+                        Temperature observation data
+                    </button>
+                </a>
+                <div class="overlay"></div>
+            </li>
+        </ul>
+        <div class="intro">
+            <h1>Hawaii Climate Data API</h1>
+            <p>This API uses both static and dynamic endpoints. All returns are in JSON format.</p>
+            <p>Supply a date or date range to <code>/api/v2.0/aggregate</code> to aggregate temperature data by date.
+                For
+                example:
+                <a id="dynamic-example"
+                    href="/api/v2.0/aggregate/2016-04-16/2017-04-16">/api/v2.0/aggregate/2016-04-16/2017-04-16</a>
+            </p>
+        </div>
+    </body>
+
+</html>

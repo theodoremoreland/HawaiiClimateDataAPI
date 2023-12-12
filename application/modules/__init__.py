@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 
 # sqlite path is relative to app.py caller.
 engine = create_engine(
-    "sqlite:///resources/hawaii.sqlite", connect_args={"check_same_thread": False}
+    "sqlite:///db/hawaii.sqlite", connect_args={"check_same_thread": False}
 )
 Base = automap_base()
 Base.prepare(engine, reflect=True)

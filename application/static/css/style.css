@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+
 html {
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: arial, sans-serif;
+  font-family: "Comfortaa", sans-serif;
   height: 100%;
   width: 100%;
 }
@@ -79,10 +81,11 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8px;
+  padding: 10px;
+  font-family: "Comfortaa", sans-serif;
   outline: transparent;
-  background-color: transparent;
-  border: 2px solid rgb(51, 57, 238);
+  background-color: #077b8ace;
+  border: none;
   border-radius: 4px;
 }
 
@@ -91,21 +94,21 @@ a {
   text-decoration: none;
 }
 
-a>button {
-  font-size: 1rem;
-  color: rgb(229, 233, 239);
+a > button {
+  font-size: 1.23rem;
+  color: rgb(255, 255, 255);
 }
 
-a>button:hover,
-a>button:active {
+a > button:hover,
+a > button:active {
   cursor: pointer;
   filter: brightness(1.15);
-  background-color: rgb(51, 57, 238);
+  background-color: #077b8a;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
-a:hover~.overlay,
-a:active~.overlay {
+a:hover ~ .overlay,
+a:active ~ .overlay {
   opacity: 0.2;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
@@ -123,6 +126,7 @@ p {
   align-items: center;
   height: 30%;
   width: 100%;
+  background-color: rgb(255, 253, 250);
 }
 
 .overlay {
@@ -132,7 +136,7 @@ p {
   height: 100%;
   width: 100%;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.4;
 }
 
 a#dynamic-example {
