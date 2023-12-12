@@ -8,16 +8,16 @@ from modules.get_station_data import get_station_data
 from modules.get_prcp_data import get_prcp_data
 from modules.get_tobs_data import get_tobs_data
 
-app = Flask(__name__)
-app.config["DEBUG"] = True
+application = Flask(__name__)
+application.config["DEBUG"] = False
 
 
-@app.route("/")
+@application.route("/")
 def index():
     return render_template("index.html")
 
 
-@app.route("/api/v2.0/precipitation")
+@application.route("/api/v2.0/precipitation")
 def precipitation_endpoint():
     """
     Returns precipitation of each day in Hawaii for the last 12 months
@@ -28,7 +28,7 @@ def precipitation_endpoint():
     return jsonify(prcp_data)
 
 
-@app.route("/api/v2.0/stations")
+@application.route("/api/v2.0/stations")
 def stations_endpoint():
     """
     Returns weather station IDs of weather stations
@@ -39,7 +39,7 @@ def stations_endpoint():
     return jsonify(stations)
 
 
-@app.route("/api/v2.0/tobs")
+@application.route("/api/v2.0/tobs")
 def tobs_endpoint():
     """
     Returns temperature observation data (tobs) for the last
@@ -50,8 +50,10 @@ def tobs_endpoint():
     return jsonify(tobs_data)
 
 
-@app.route("/api/v2.0/aggregate/<start>", defaults={"end": last_date}, methods=["GET"])
-@app.route("/api/v2.0/aggregate/<start>/<end>", methods=["GET"])
+@application.route(
+    "/api/v2.0/aggregate/<start>", defaults={"end": last_date}, methods=["GET"]
+)
+@application.route("/api/v2.0/aggregate/<start>/<end>", methods=["GET"])
 def aggregate_endpoint(start, end):
     """
     Returns min, average, and max temperature for the specified date and/or date range.
@@ -64,4 +66,4 @@ def aggregate_endpoint(start, end):
 
 
 if __name__ == "__main__":
-    app.run()
+    application.run(host="0.0.0.0", port=5000)
