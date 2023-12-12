@@ -10,7 +10,6 @@ html {
 }
 
 body {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +94,7 @@ a {
 }
 
 a > button {
-  font-size: 1.23rem;
+  font-size: 1rem;
   color: rgb(255, 255, 255);
 }
 
@@ -113,6 +112,11 @@ a:active ~ .overlay {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
+h1,
+p {
+  z-index: 2;
+}
+
 p {
   font-size: 0.8rem;
   margin: 0;
@@ -120,12 +124,14 @@ p {
 }
 
 .intro {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 30%;
   width: 100%;
+  overflow: hidden;
   background-color: rgb(255, 253, 250);
 }
 
@@ -141,13 +147,13 @@ p {
 
 a#dynamic-example {
   text-decoration: none;
-  font-size: 1rem;
-  color: rgb(51, 57, 238);
+  font-size: 0.9rem;
+  color: #1464a7;
 }
 
 a#dynamic-example:hover,
 a#dynamic-example:active {
-  opacity: 0.8;
+  filter: brightness(1.25);
 }
 
 @media screen and (min-width: 760px) {
@@ -167,5 +173,16 @@ a#dynamic-example:active {
 
   li {
     width: calc(100% / 3);
+  }
+
+  a#dynamic-example {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  a > button {
+    font-size: 1.18rem;
+    color: rgb(255, 255, 255);
   }
 }
