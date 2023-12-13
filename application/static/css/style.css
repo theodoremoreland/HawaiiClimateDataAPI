@@ -133,6 +133,8 @@ p {
   height: 30%;
   width: 100%;
   overflow: hidden;
+  text-align: center;
+  line-height: 1.6;
   background-color: rgb(255, 253, 250);
 }
 
