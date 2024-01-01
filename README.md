@@ -27,6 +27,7 @@ _This project was for an assignment at Washington University's Data Analytics Bo
 - Flask
 - Black
 - VS Code
+- Docker
 
 # How to run locally
 
