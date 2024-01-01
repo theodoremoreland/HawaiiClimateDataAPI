@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  hawaii-climate-data-api-service:
+    container_name: hawaii-climate-data-api-dev-container
+    build:
+      context: ..
+      dockerfile: ./docker/dev.Dockerfile
+    ports:
+      - 5000:5000
