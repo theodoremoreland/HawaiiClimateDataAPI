@@ -96,15 +96,7 @@ Visit: http://localhost:5000 to use the application.
 
 ### Home (Desktop)
 
-<img src="presentation/1.PNG" width="900">
-
-### Home #2 (Mouseover - Desktop)
-
-<img src="presentation/2.PNG" width="700">
-
-### Home (Mobile)
-
-<img src="presentation/3.PNG" width="300">
+<img src="presentation/thumbnail.png" width="900">
 
 ### /api/v2.0/precipitation
 
