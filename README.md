@@ -6,7 +6,7 @@ For this project, I used Python to perform analysis on a climate database before
 
 _This project was for an assignment at Washington University's Data Analytics Boot Camp (2019)._
 
-# Table of contents
+## Table of contents
 
 - [Technologies Used](#technologies-used)
 - [How to run locally](#how-to-run-locally)
@@ -29,12 +29,12 @@ _This project was for an assignment at Washington University's Data Analytics Bo
 - VS Code
 - Docker
 
-# How to run locally
+## How to run locally
 
 - If you are trying to run this application directly on a Windows OS, you will need to install `Python 3.11`.
 - Otherwise, you will need to install Docker so you can run the application through Docker.
 
-## Run on Windows
+### Run on Windows
 
 Assumes you are using a modern Windows client OS such as Windows 11 or Windows 10 and that Python 3.11 is installed.
 
@@ -70,7 +70,7 @@ Start application:
 python application.py
 ```
 
-## Run on Docker
+### Run on Docker
 
 Firstly, confirm that Docker is installed and running. Next confirm that no other application is using port `5000` as port `5000` is needed for the Flask server. If you need to run Flask on an alternative port, you can modify the last line in the `application/application.py` file.
 
@@ -90,9 +90,9 @@ docker compose up --build
 
 Visit: http://localhost:5000 to use the application.
 
-## Screenshots
+# Screenshots
 
-# Climate API
+## Climate API
 
 ### Home (Desktop)
 
