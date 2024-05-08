@@ -156,23 +156,23 @@ p {
 }
 
 a#dynamic-example {
-  text-decoration: none;
-  color: #1464a7;
+  text-decoration: underline;
+  color: #00447c;
 }
 
 a#dynamic-example:hover,
 a#dynamic-example:active {
-  filter: brightness(1.25);
+  filter: brightness(1.65);
 }
 
 @media screen and (min-width: 760px) {
   h1 {
-    font-size: 1.9rem;
+    font-size: 1.85rem;
   }
 
   p {
-    font-size: 1.3rem;
-    width: 65%;
+    font-size: 1.2rem;
+    width: 75ch;
   }
 
   ul {
