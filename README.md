@@ -110,11 +110,11 @@ Visit: http://localhost:5000 to use the application.
 
 #### Home (Mobile)
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/3.png" width="200">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/3.png" width="300">
 
 #### Home (Mobile) - Hover Effect
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/4.png" width="200">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/4.png" width="300">
 
 ### /api/v2.0/precipitation
 
