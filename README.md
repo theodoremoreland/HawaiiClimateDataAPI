@@ -14,6 +14,8 @@ _This project was for an assignment at Washington University's Data Analytics Bo
   - [Run on Docker](#run-on-docker)
 - [Screenshots](#screenshots)
   - [API](#Climate-API)
+    - [Desktop](#desktop)
+    - [Mobile](#mobile)
   - [Analysis](#Analysis)
 
 ## Technologies used
@@ -94,9 +96,25 @@ Visit: http://localhost:5000 to use the application.
 
 ## Climate API
 
-### Home (Desktop)
+### Desktop
 
-<img src="presentation/thumbnail.png" width="900">
+#### Home (Desktop)
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/1.png" width="800">
+
+#### Home (Desktop) - Hover Effect
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/2.png" width="800">
+
+### Mobile
+
+#### Home (Mobile)
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/3.png" width="200">
+
+#### Home (Mobile) - Hover Effect
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/4.png" width="200">
 
 ### /api/v2.0/precipitation
 
