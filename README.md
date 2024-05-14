@@ -100,21 +100,21 @@ Visit: http://localhost:5000 to use the application.
 
 #### Home (Desktop)
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/1.png" width="800">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/1.png" width="650">
 
 #### Home (Desktop) - Hover Effect
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/2.png" width="800">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/2.png" width="650">
 
 ### Mobile
 
 #### Home (Mobile)
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/3.png" width="300">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/3.png" width="250">
 
 #### Home (Mobile) - Hover Effect
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/4.png" width="300">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/4.png" width="250">
 
 ### /api/v2.0/precipitation
 
