@@ -10,7 +10,7 @@ from modules.get_tobs_data import get_tobs_data
 from modules.logger import logger
 
 application = Flask(__name__)
-application.config["DEBUG"] = False
+application.config["DEBUG"] = True
 
 
 @application.route("/")
