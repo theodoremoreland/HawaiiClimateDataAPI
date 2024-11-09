@@ -25,7 +25,7 @@ def index():
         return render_template("error.html", error_message=e)
 
 
-@application.route("/api/v2.0/precipitation")
+@application.route("/api/v2/precipitation")
 def precipitation_endpoint():
     """
     Returns precipitation of each day in Hawaii for the last 12 months
@@ -43,7 +43,7 @@ def precipitation_endpoint():
         return render_template("error.html", error_message=e)
 
 
-@application.route("/api/v2.0/stations")
+@application.route("/api/v2/stations")
 def stations_endpoint():
     """
     Returns weather station IDs of weather stations
@@ -61,7 +61,7 @@ def stations_endpoint():
         return render_template("error.html", error_message=e)
 
 
-@application.route("/api/v2.0/tobs")
+@application.route("/api/v2/tobs")
 def tobs_endpoint():
     """
     Returns temperature observation data (tobs) for the last
@@ -80,9 +80,9 @@ def tobs_endpoint():
 
 
 @application.route(
-    "/api/v2.0/aggregate/<start>", defaults={"end": last_date}, methods=["GET"]
+    "/api/v2/aggregate/<start>", defaults={"end": last_date}, methods=["GET"]
 )
-@application.route("/api/v2.0/aggregate/<start>/<end>", methods=["GET"])
+@application.route("/api/v2/aggregate/<start>/<end>", methods=["GET"])
 def aggregate_endpoint(start, end):
     """
     Returns min, average, and max temperature for the specified date and/or date range.

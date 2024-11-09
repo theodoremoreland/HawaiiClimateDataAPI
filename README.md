@@ -8,33 +8,33 @@ _This project was for an assignment at Washington University's Data Analytics Bo
 
 ## Table of contents
 
-- [Technologies Used](#technologies-used)
-- [How to run locally](#how-to-run-locally)
-  - [Run on Windows](#run-on-windows)
-  - [Run on Docker](#run-on-docker)
-- [Screenshots](#screenshots)
-  - [API](#Climate-API)
-    - [Desktop](#desktop)
-    - [Mobile](#mobile)
-  - [Analysis](#Analysis)
+-   [Technologies Used](#technologies-used)
+-   [How to run locally](#how-to-run-locally)
+    -   [Run on Windows](#run-on-windows)
+    -   [Run on Docker](#run-on-docker)
+-   [Screenshots](#screenshots)
+    -   [API](#Climate-API)
+        -   [Desktop](#desktop)
+        -   [Mobile](#mobile)
+    -   [Analysis](#Analysis)
 
 ## Technologies used
 
-- Python
-- HTML
-- CSS
-- Jupyter Notebook
-- Matplotlib
-- Pandas
-- Flask
-- Black
-- VS Code
-- Docker
+-   Python
+-   HTML
+-   CSS
+-   Jupyter Notebook
+-   Matplotlib
+-   Pandas
+-   Flask
+-   Black
+-   VS Code
+-   Docker
 
 ## How to run locally
 
-- If you are trying to run this application directly on a Windows OS, you will need to install `Python 3.11`.
-- Otherwise, you will need to install Docker so you can run the application through Docker.
+-   If you are trying to run this application directly on a Windows OS, you will need to install `Python 3.11`.
+-   Otherwise, you will need to install Docker so you can run the application through Docker.
 
 ### Run on Windows
 
@@ -116,25 +116,25 @@ Visit: http://localhost:5000 to use the application.
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/4.png" width="250">
 
-### /api/v2.0/precipitation
+### /api/v2/precipitation
 
 Returns precipitation data for the most recent 12 months of dataset.
 
 <img src="presentation/4.PNG" width="700">
 
-### /api/v2.0/stations
+### /api/v2/stations
 
 Return station data.
 
 <img src="presentation/5.PNG" width="700">
 
-### /api/v2.0/tobs
+### /api/v2/tobs
 
 Returns temperature observation data (tobs) from 12 most recent months of dataset.
 
 <img src="presentation/6.PNG" width="700">
 
-### /api/v2.0/aggregate/start-date/end-date
+### /api/v2/aggregate/start-date/end-date
 
 Returns minimum temperature, average temperature, and the max temperature for a given start or start-end range.
 
