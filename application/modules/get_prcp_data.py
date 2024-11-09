@@ -7,6 +7,7 @@ from . import Measurement, session, one_year_ago
 
 
 def get_prcp_data():
+    result = {}
     prcp_last_12_months = (
         session.query(Measurement.date, Measurement.prcp)
         .order_by(Measurement.date.desc())
@@ -20,4 +21,12 @@ def get_prcp_data():
     ).iloc[0:]
     prcp_last_12_months_df.reset_index(inplace=True)
 
-    return prcp_last_12_months_df.to_dict()
+    for _, row in prcp_last_12_months_df.iterrows():
+        date = row["date"]
+
+        if date not in result:
+            result[date] = []
+
+        result[date].append(row["prcp"])
+
+    return result
