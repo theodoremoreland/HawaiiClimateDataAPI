@@ -174,12 +174,13 @@ p {
 
 a#dynamic-example {
     text-decoration: underline;
-    color: #00447c;
+    color: rgb(31, 34, 58);
+    font-weight: bold;
 }
 
 a#dynamic-example:hover,
 a#dynamic-example:active {
-    filter: brightness(1.65);
+    filter: brightness(1.35);
 }
 
 @media screen and (min-width: 760px) {
