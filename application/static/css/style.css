@@ -43,6 +43,12 @@ h1 {
     color: rgb(56, 59, 80);
 }
 
+@media screen and (min-width: 760px) {
+    h1 {
+        font-size: 1.85rem;
+    }
+}
+
 ul,
 li {
     padding: 0;
@@ -64,6 +70,14 @@ ul {
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
         rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
         rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+@media screen and (min-width: 760px) {
+    ul {
+        order: initial;
+        flex-direction: row;
+        height: 70%;
+    }
 }
 
 li {
@@ -98,6 +112,19 @@ li:nth-of-type(3) {
     background-image: url("/static/images/pic3.webp");
 }
 
+@media screen and (min-width: 760px) {
+    li {
+        border: none;
+        width: calc(100% / 3);
+    }
+
+    li:nth-of-type(2) {
+        border: none;
+        border-left: 4px solid #0f6c79;
+        border-right: 4px solid #0f6c79;
+    }
+}
+
 button {
     display: flex;
     flex-direction: column;
@@ -119,6 +146,13 @@ a {
 a > button {
     font-size: 1rem;
     color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 1100px) {
+    a > button {
+        font-size: 1.18rem;
+        color: rgb(255, 255, 255);
+    }
 }
 
 a > button:hover,
@@ -147,6 +181,13 @@ p {
     padding: 7px 15px;
 }
 
+@media screen and (min-width: 760px) {
+    p {
+        font-size: 1.2rem;
+        width: 75ch;
+    }
+}
+
 .intro {
     position: relative;
     display: flex;
@@ -160,6 +201,12 @@ p {
     text-align: center;
     line-height: 1.6;
     background-color: rgb(255, 253, 250);
+}
+
+@media screen and (min-width: 760px) {
+    .intro {
+        justify-content: center;
+    }
 }
 
 .overlay {
@@ -181,43 +228,4 @@ a#dynamic-example {
 a#dynamic-example:hover,
 a#dynamic-example:active {
     filter: brightness(1.35);
-}
-
-@media screen and (min-width: 760px) {
-    h1 {
-        font-size: 1.85rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-        width: 75ch;
-    }
-
-    ul {
-        order: initial;
-        flex-direction: row;
-        height: 70%;
-    }
-
-    li {
-        border: none;
-        width: calc(100% / 3);
-    }
-
-    li:nth-of-type(2) {
-        border: none;
-        border-left: 4px solid #0f6c79;
-        border-right: 4px solid #0f6c79;
-    }
-
-    .intro {
-        justify-content: center;
-    }
-}
-
-@media screen and (min-width: 1100px) {
-    a > button {
-        font-size: 1.18rem;
-        color: rgb(255, 255, 255);
-    }
 }
