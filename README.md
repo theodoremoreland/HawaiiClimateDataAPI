@@ -2,7 +2,7 @@
 
 For this project, I used Python to perform analysis on a climate database before mapping said database to a custom built REST-API. The database features Hawaii Climate data between `2010-01-01` and `2017-08-23`. I used Python and SQLAlchemy to do climate analysis and exploration on a hawaii.sqlite database, all analysis was completed using SQLAlchemy ORM queries, Pandas, and Matplotlib. The REST-API was developed using Python (Flask).
 
-<img src="presentation/thumbnail.png" width="650">
+<img src="presentation/thumbnail.webp" width="650">
 
 _This project was for an assignment at Washington University's Data Analytics Boot Camp (2019)._
 
