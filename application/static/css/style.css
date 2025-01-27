@@ -195,13 +195,20 @@ p {
     position: absolute;
     top: 1%;
     right: 1%;
-    height: 10%;
-    min-height: 85px;
+    height: 9%;
+    min-height: 70px;
     aspect-ratio: 16/9;
     border-radius: var(--border-radius);
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
         rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
         rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
+    @media screen and (min-width: 760px) {
+        & {
+            height: 10%;
+            min-height: 80px;
+        }
+    }
 
     & a {
         z-index: 3;
@@ -256,7 +263,7 @@ p {
     justify-content: flex-end;
     align-items: center;
     min-height: 135px;
-    height: 70%;
+    height: 75%;
     width: 100%;
     overflow: hidden;
     text-align: center;
