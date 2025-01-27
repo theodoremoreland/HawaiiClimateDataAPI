@@ -98,23 +98,79 @@ Visit: http://localhost:5000 to use the application.
 
 ### Desktop
 
-#### Home (Desktop)
+#### Landing page
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/1.png" width="650">
 
-#### Home (Desktop) - Hover Effect
+#### Landing page, hover over Precipitation button
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/2.png" width="650">
 
+#### Precipitation results
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/3.png" width="650">
+
+#### Landing page, hover over Weather Station IDs button
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/4.png" width="650">
+
+#### Weather Station IDs results
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/5.png" width="650">
+
+#### Landing page, hover over TOBs button
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/6.png" width="650">
+
+#### TOBs results
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/7.png" width="650">
+
+#### Landing page, hover over Analysis button
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/8.png" width="650">
+
+#### Analysis page 1
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/9.png" width="650">
+
+#### Analysis page 2
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/10.png" width="650">
+
+#### Analysis page 3
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/11.png" width="650">
+
+#### Analysis page 4
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/12.png" width="650">
+
+#### Analysis page 5
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/13.png" width="650">
+
+#### Analysis page 6
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/14.png" width="650">
+
+#### Analysis page 7
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/15.png" width="650">
+
+#### Aggregate results for specified date range
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/16.png" width="650">
+
 ### Mobile
 
-#### Home (Mobile)
+#### Landing page
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/3.png" width="250">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/17.png" width="250">
 
-#### Home (Mobile) - Hover Effect
+#### Top of analysis page
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/4.png" width="250">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/18.png" width="650">
 
 ### /api/v2/precipitation
 
