@@ -170,7 +170,7 @@ Visit: http://localhost:5000 to use the application.
 
 #### Top of analysis page
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/18.png" width="650">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/18.png" width="250">
 
 ### /api/v2/precipitation
 
