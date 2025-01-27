@@ -25,6 +25,18 @@ def index():
         return render_template("error.html", error_message=e)
 
 
+@application.route("/analysis")
+def analysis_endpoint():
+    logger.info("Analysis page accessed.")
+
+    try:
+        return render_template("climate_analysis.html")
+    except Exception as e:
+        logger.exception(e)
+
+        return render_template("error.html", error_message=e)
+
+
 @application.route("/api/v2/precipitation")
 def precipitation_endpoint():
     """
