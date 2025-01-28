@@ -172,30 +172,6 @@ Visit: http://localhost:5000 to use the application.
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/hawaii-climate-data-api/18.png" width="250">
 
-### /api/v2/precipitation
-
-Returns precipitation data for the most recent 12 months of dataset.
-
-<img src="presentation/4.PNG" width="700">
-
-### /api/v2/stations
-
-Return station data.
-
-<img src="presentation/5.PNG" width="700">
-
-### /api/v2/tobs
-
-Returns temperature observation data (tobs) from 12 most recent months of dataset.
-
-<img src="presentation/6.PNG" width="700">
-
-### /api/v2/aggregate/start-date/end-date
-
-Returns minimum temperature, average temperature, and the max temperature for a given start or start-end range.
-
-<img src="presentation/7.png" width="700">
-
 ---
 
 ## Analysis
