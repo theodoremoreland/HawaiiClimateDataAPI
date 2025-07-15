@@ -1,0 +1,8 @@
+{
+  "hawaii-climate-data-api": {
+    "image": ":hawaii-climate-data-api-container-service.hawaii-climate-data-api.latest",
+    "ports": {
+      "5000": "HTTP"
+    }
+  }
+}
