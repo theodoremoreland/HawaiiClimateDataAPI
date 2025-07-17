@@ -20,6 +20,7 @@ html {
     padding: 0;
     margin: 0;
     font-family: custom-regular, sans-serif;
+    min-height: 700px;
     height: 100%;
     width: 100%;
 }
@@ -175,7 +176,7 @@ p {
 }
 
 p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-family: custom-regular;
     margin: 0;
     padding: 7px 15px;
