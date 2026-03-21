@@ -180,6 +180,7 @@ p {
     font-family: custom-regular;
     margin: 0;
     padding: 7px 15px;
+    text-wrap: balance;
 }
 
 @media screen and (min-width: 760px) {
@@ -300,9 +301,19 @@ p {
 }
 
 a#dynamic-example {
-    text-decoration: underline;
+    position: absolute;
+    bottom: 1rem;
+    right: unset;
+    text-decoration: none;
     color: rgb(255, 253, 250);
-    font-weight: bold;
+    font-size: 0.75rem;
+    border-bottom: 1px solid rgb(255, 253, 250);
+
+    @media screen and (min-width: 760px) {
+        & {
+            right: 2rem;
+        }
+    }
 }
 
 a#dynamic-example:hover,
