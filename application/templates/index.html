@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A REST API for Hawaii climate data with returns in JSON format.">
         <title>
             Hawaii Climate Data API
         </title>
@@ -14,16 +15,29 @@
     </head>
 
     <body>
-        <div id="analysis-preview">
-            <div id="text-container">
-                <a href="/analysis" title="Analysis of Hawaii climate data in the form of a Jupyter Notebook.">
-                    <button type="button">
-                        Analysis
-                    </button>
-                </a>
-                <div class="overlay"></div>
+        <div id="preview-container">
+            <div id="analysis-preview">
+                <div class="text-container">
+                    <a href="/analysis" title="Analysis of Hawaii climate data in the form of a Jupyter Notebook.">
+                        <button type="button">
+                            Analysis
+                        </button>
+                    </a>
+                    <div class="overlay"></div>
+                </div>
+                <img class="preview" src="../static/images/climate_analysis_preview.png" alt="climate analysis preview" />
             </div>
-            <img id="preview" src="../static/images/climate_analysis_preview.png" alt="climate analysis preview" />
+            <div id="docs-preview">
+                <div class="text-container">
+                    <a href="https://github.com/theodoremoreland/HawaiiClimateDataAPI" target="_blank" title="Documentation for the Hawaii Climate Data API.">
+                        <button type="button">
+                            Docs
+                        </button>
+                    </a>
+                    <div class="overlay"></div>
+                </div>
+                <img class="preview" src="../static/images/docs_preview.png" alt="API documentation preview" />
+            </div>
         </div>
         <ul>
             <li>
@@ -56,11 +70,8 @@
         </ul>
         <div class="intro">
             <h1>Hawaii Climate Data API</h1>
-            <p>A REST API with returns in JSON format. Supply date or date range to
-                <i>"/api/v2/aggregate/{start-date}/{end-date}"</i> to aggregate data by date (from 2010-01-01 to
-                2017-08-23).
-                For example: <a id="dynamic-example"
-                    href="/api/v2/aggregate/2016-04-16/2017-04-16">/api/v2/aggregate/2016-04-16/2017-04-16</a>
+            <p>
+                A REST API with returns in JSON format.
             </p>
             <div class="ocean">
                 <div class="wave"></div>
