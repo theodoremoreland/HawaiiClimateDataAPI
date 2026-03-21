@@ -279,7 +279,7 @@ p {
     line-height: 1.6;
     color: rgb(255, 253, 250);
     background-color: #c5c5c5;
-    background: radial-gradient(circle,#FF6000 24%,#FD9353 24% ,black 200%);
+    background: radial-gradient(circle,#FF6000 24%,#DCC9BD 24% ,black 200%);
 }
 
 @media screen and (min-width: 760px) {
