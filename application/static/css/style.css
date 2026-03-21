@@ -286,6 +286,19 @@ p {
     .intro {
         justify-content: center;
         height: 45%;
+        background: radial-gradient(circle,#FF6000 20%,#DCC9BD 20% ,black 200%);
+    }
+}
+
+@media screen and (min-width: 2140px) {
+    .intro {
+        background: radial-gradient(circle,#FF6000 17%,#DCC9BD 17% ,black 200%);
+    }
+}
+
+@media screen and (min-width: 3110px) {
+    .intro {
+        background: radial-gradient(circle,#FF6000 12%,#DCC9BD 12% ,black 200%);
     }
 }
 
