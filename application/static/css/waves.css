@@ -2,7 +2,7 @@
 /* Source code: https://codepen.io/tedmcdo/pen/PqxKXg */
 
 .ocean {
-    height: 5.35rem;
+    height: 1.5rem;
     max-height: 38%;
     width: 100%;
     position: absolute;
@@ -11,9 +11,33 @@
     background: #015871;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 720px) {
     .ocean {
-        height: 13.35rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .ocean {
+        height: 4rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .ocean {
+        height: 6rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .ocean {
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width: 2160px) {
+    .ocean {
+        height: 12rem;
     }
 }
 
