@@ -2,43 +2,13 @@
 /* Source code: https://codepen.io/tedmcdo/pen/PqxKXg */
 
 .ocean {
-    height: 1.5rem;
+    height: var(--wave-height);
     max-height: 38%;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
     background: #015871;
-}
-
-@media screen and (min-height: 720px) {
-    .ocean {
-        height: 2rem;
-    }
-}
-
-@media screen and (min-height: 1080px) {
-    .ocean {
-        height: 4rem;
-    }
-}
-
-@media screen and (min-height: 1280px) {
-    .ocean {
-        height: 6rem;
-    }
-}
-
-@media screen and (min-height: 1920px) {
-    .ocean {
-        height: 10rem;
-    }
-}
-
-@media screen and (min-height: 2160px) {
-    .ocean {
-        height: 12rem;
-    }
 }
 
 .wave {

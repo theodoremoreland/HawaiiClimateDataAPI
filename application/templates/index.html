@@ -1,90 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A REST API for Hawaii climate data with returns in JSON format."
+    />
+    <title>Hawaii Climate Data API</title>
+    <link rel="icon" type="image/png" href="../static/images/hawaii.png" />
+    <link rel="stylesheet" href="../static/css/waves.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A REST API for Hawaii climate data with returns in JSON format.">
-        <title>
-            Hawaii Climate Data API
-        </title>
-        <link rel="icon" type="image/png" href="../static/images/hawaii.png">
-        <link rel="stylesheet" href="../static/css/waves.css">
-        <link rel="stylesheet" href="../static/css/style.css">
-    </head>
-
-    <body>
-        <div id="preview-container">
-            <div id="analysis-preview">
-                <div class="text-container">
-                    <a href="/analysis" title="Analysis of Hawaii climate data in the form of a Jupyter Notebook.">
-                        <button type="button">
-                            Analysis
-                        </button>
-                    </a>
-                    <div class="overlay"></div>
-                </div>
-                <img class="preview" src="../static/images/climate_analysis_preview.png" alt="climate analysis preview" />
-            </div>
-            <div id="docs-preview">
-                <div class="text-container">
-                    <a href="https://github.com/theodoremoreland/HawaiiClimateDataAPI" target="_blank" title="Documentation for the Hawaii Climate Data API.">
-                        <button type="button">
-                            Docs
-                        </button>
-                    </a>
-                    <div class="overlay"></div>
-                </div>
-                <img class="preview" src="../static/images/docs_preview.png" alt="API documentation preview" />
-            </div>
-        </div>
-        <ul>
-            <li>
-                <a title="Returns precipitation of each day in Hawaii for the last 12 months
-                of data-set." href="/api/v2/precipitation">
-                    <button type="button">
-                        Precipitation data
-                    </button>
-                </a>
-                <div class="overlay"></div>
-            </li>
-            <li>
-                <a title="Returns weather station IDs of weather stations
-                used in data." href="/api/v2/stations">
-                    <button type="button">
-                        Weather station IDs
-                    </button>
-                </a>
-                <div class="overlay"></div>
-            </li>
-            <li>
-                <a title="Returns temperature observation data (tobs) for the last
-                12 months of data-set. Represents a temperature for each day." href="/api/v2/tobs">
-                    <button type="button">
-                        Temperature observation data
-                    </button>
-                </a>
-                <div class="overlay"></div>
-            </li>
-        </ul>
-        <div class="intro">
-            <h1>Hawaii Climate Data API</h1>
-            <p>
-                A REST API with returns in JSON format.
-            </p>
+  <body>
+    <nav>
+      <ul id="endpoints">
+        <li>
+          <a
+            title="Returns precipitation of each day in Hawaii for the last 12 months
+                  of data-set."
+            href="/api/v2/precipitation"
+          >
+            <button id="precipitation" type="button">Precipitation data</button>
+          </a>
+        </li>
+        <li>
+          <a
+            title="Returns weather station IDs of weather stations
+                  used in data."
+            href="/api/v2/stations"
+          >
+            <button id="stations" type="button">Weather station IDs</button>
+          </a>
+        </li>
+        <li>
+          <a
+            title="Returns temperature observation data (tobs) for the last
+                  12 months of data-set. Represents a temperature for each day."
+            href="/api/v2/tobs"
+          >
+            <button id="tobs" type="button">Temperature observation data</button>
+          </a>
+        </li>
+      </ul>
+      <ul id="preview-container">
+        <li id="analysis-preview">
+          <div class="text-container">
             <a
-                id="dynamic-example"
-                href="/api/v2/aggregate/2010-01-01/2017-08-23"
-                title="Returns aggregate temperature data given a specified start and end date between 2010-01-01 and 2017-08-23."
+              href="/analysis"
+              title="Analysis of Hawaii climate data in the form of a Jupyter Notebook."
             >
-                Get data between Jan, 2010 and Aug, 2017
+              <button type="button">Analysis</button>
             </a>
-            <div class="ocean">
-                <div class="wave"></div>
-                <div class="wave"></div>
-            </div>
-        </div>
-    </body>
+            <div class="overlay"></div>
+          </div>
+          <img
+            class="preview"
+            src="../static/images/climate_analysis_preview.png"
+            alt="climate analysis preview"
+          />
+        </li>
+        <li id="docs-preview">
+          <div class="text-container">
+            <a
+              href="https://github.com/theodoremoreland/HawaiiClimateDataAPI"
+              target="_blank"
+              title="Documentation for the Hawaii Climate Data API."
+            >
+              <button type="button">Docs</button>
+            </a>
+            <div class="overlay"></div>
+          </div>
+          <img
+            class="preview"
+            src="../static/images/docs_preview.png"
+            alt="API documentation preview"
+          />
+        </li>
+      </ul>
+    </nav>
+    <main class="intro">
+      <h1>Hawaii Climate Data API</h1>
+      <p>A REST API with returns in JSON format</p>
+      <a
+        id="dynamic-example"
+        href="/api/v2/aggregate/2010-01-01/2017-08-23"
+        title="Returns aggregate temperature data given a specified start and end date between 2010-01-01 and 2017-08-23."
+      >
+        Get data between Jan, 2010 and Aug, 2017
+      </a>
+      <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+    </main>
+    <div id="clouds-container" aria-hidden="true">
+      <div class="cloud-layer cloud-layer--slow">
+        <img src="../static/images/i-warm.png" alt="" />
+        <img src="../static/images/i-warm.png" alt="" />
+      </div>
 
+      <div class="cloud-layer cloud-layer--fast">
+        <img src="../static/images/i-warm2.png" alt="" />
+        <img src="../static/images/i-warm2.png" alt="" />
+      </div>
+    </div>
+  </body>
 </html>
