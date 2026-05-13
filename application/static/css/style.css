@@ -16,10 +16,14 @@
 }
 
 :root {
-  --wave-height: 7rem;
+  --wave-height: 6.5rem;
 
   @media screen and (min-width: 1280px) {
-    --wave-height: 15rem;
+    --wave-height: 8rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    --wave-height: 13rem;
   }
 }
 
@@ -64,20 +68,6 @@ nav {
   @media screen and (min-width: 1280px) {
     flex-direction: row;
     align-items: center;
-  }
-}
-
-h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 1.6rem;
-  font-family: custom-bold;
-  color: inherit;
-}
-
-@media screen and (min-width: 760px) {
-  h1 {
-    font-size: 2.5rem;
   }
 }
 
@@ -137,6 +127,20 @@ p {
   z-index: 2;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-family: custom-bold;
+  color: inherit;
+}
+
+@media screen and (min-width: 760px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
 p {
   max-width: 72ch;
   font-size: 1rem;
@@ -157,6 +161,7 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -296,7 +301,13 @@ p {
   line-height: 1.6;
   color: rgb(255, 253, 250);
   background-color: #00b9f28c;
-  background: radial-gradient(circle, #ff6000 30%, #fb874e 24%, #00b9f200 31%);
+  background: radial-gradient(circle, #ff6000 40%, #fb874e 24%, #00b9f200 31%);
+}
+
+@media screen and (min-width: 1280px) {
+    .intro {
+        background: radial-gradient(circle, #ff6000 30%, #fb874e 24%, #00b9f200 31%);
+    }
 }
 
 .overlay {
