@@ -36,12 +36,12 @@ _This project was for an assignment at Washington University's Data Analytics Bo
 
 ## How to run locally
 
-- If you are trying to run this application directly on a Windows OS, you will need to install `Python 3.11`. You will also likely have to install Visual Studio and Microsoft C++ Build Tools.
+- If you are trying to run this application directly on a Windows OS, you will need to install `Python 3.13.5`. You will also likely have to install Visual Studio and Microsoft C++ Build Tools.
 - Alternatively, the recommended way is to install Docker so you can run the application through Docker.
 
 ### Run on Windows
 
-Assumes you are using a modern Windows client OS such as Windows 11 or Windows 10 and that Python 3.11 is installed.
+Assumes you are using a modern Windows client OS such as Windows 11 or Windows 10 and that Python 3.13.5 is installed.
 
 **It is assumed the user is at the root of this project and is using a UNIX style command line environment when referencing the CLI commands below.**
 
@@ -51,10 +51,10 @@ Open terminal at root of this project then move into application/ directory:
 cd application/
 ```
 
-Create venv folder in application folder using Python 3.11:
+Create venv folder in application folder using Python 3.13.5:
 
 ```bash
-python3.11 -m venv venv
+python -m venv venv
 ```
 
 Activate venv:
