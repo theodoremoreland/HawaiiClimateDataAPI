@@ -66,8 +66,8 @@ body {
     height: 100%;
     background: radial-gradient(
       circle,
-      rgba(255, 69, 69, 0) 80%,
-      rgba(0, 0, 0, 1) 137%
+      rgba(255, 69, 69, 0) -77%,
+      rgba(0, 0, 0, 1) 107%
     );
   }
 }
