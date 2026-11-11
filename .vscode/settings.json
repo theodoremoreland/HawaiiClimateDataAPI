@@ -1,9 +1,13 @@
 {
+  "editor.formatOnSave": true,
   "black-formatter.importStrategy": "fromEnvironment",
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,
     "editor.formatOnPaste": false
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cSpell.words": [
     "jsonify",
