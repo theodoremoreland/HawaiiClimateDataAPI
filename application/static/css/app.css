@@ -48,6 +48,10 @@ nav {
   height: 100%;
   color: black;
   font-style: italic;
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 #summary {
@@ -111,10 +115,6 @@ nav {
       border-radius: var(--border-radius);
     }
   }
-
-  .col:nth-of-type(1) {
-    border: var(--border);
-  }
 }
 
 /* PREVIEW */
@@ -140,7 +140,6 @@ nav {
   position: relative;
   height: 100%;
   aspect-ratio: 16/9;
-  border: var(--border);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 
@@ -204,10 +203,10 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 0.25rem;
     width: 100%;
     height: 100%;
-    padding: 1rem;
+    padding: 2rem;
     color: white;
     background-color: var(--background-color-2);
     backdrop-filter: var(--backdrop-filter);
@@ -216,7 +215,10 @@ nav {
     box-shadow: var(--box-shadow);
 
     h2 {
+      padding: 0;
+      margin: 0;
       font-size: 2rem;
+      font-family: custom-bold, sans-serif;
     }
   }
 }
