@@ -215,10 +215,11 @@ nav {
     box-shadow: var(--box-shadow);
 
     h2 {
-      padding: 0;
-      margin: 0;
       font-size: 2rem;
       font-family: custom-bold, sans-serif;
+      letter-spacing: 8px;
+      padding: 0;
+      margin: 0;
     }
   }
 }
