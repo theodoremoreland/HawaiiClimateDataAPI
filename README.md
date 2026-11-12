@@ -1,4 +1,4 @@
-# Hawaii Climate Data API
+# Hawaii Climate API
 
 For this project, I used Python to perform analysis on a climate database before mapping said database to a custom built REST-API. The database features Hawaii Climate data between `2010-01-01` and `2017-08-23`. I used Python and SQLAlchemy to do climate analysis and exploration on a hawaii.sqlite database, all analysis was completed using SQLAlchemy ORM queries, Pandas, Matplotlib, and Jupyter Notebook. The REST-API was developed using Python (Flask).
 
@@ -36,12 +36,12 @@ _This project was for an assignment at Washington University's Data Analytics Bo
 
 ## How to run locally
 
-- If you are trying to run this application directly on a Windows OS, you will need to install `Python 3.11`. You will also likely have to install Visual Studio and Microsoft C++ Build Tools.
+- If you are trying to run this application directly on a Windows OS, you will need to install `Python 3.13.5`. You will also likely have to install Visual Studio and Microsoft C++ Build Tools.
 - Alternatively, the recommended way is to install Docker so you can run the application through Docker.
 
 ### Run on Windows
 
-Assumes you are using a modern Windows client OS such as Windows 11 or Windows 10 and that Python 3.11 is installed.
+Assumes you are using a modern Windows client OS such as Windows 11 or Windows 10 and that Python 3.13.5 is installed.
 
 **It is assumed the user is at the root of this project and is using a UNIX style command line environment when referencing the CLI commands below.**
 
@@ -51,10 +51,10 @@ Open terminal at root of this project then move into application/ directory:
 cd application/
 ```
 
-Create venv folder in application folder using Python 3.11:
+Create venv folder in application folder using Python 3.13.5:
 
 ```bash
-python3.11 -m venv venv
+python -m venv venv
 ```
 
 Activate venv:

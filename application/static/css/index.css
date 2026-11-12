@@ -1,0 +1,168 @@
+/* ___________________ FONTS ____________________________ */
+
+@font-face {
+  font-family: custom-bold;
+  src: url("../fonts/Comfortaa-Bold.ttf");
+}
+
+@font-face {
+  font-family: custom-regular;
+  src: url("../fonts/Comfortaa-Regular.ttf");
+}
+
+@font-face {
+  font-family: custom-light;
+  src: url("../fonts/Comfortaa-Light.ttf");
+}
+
+:root {
+  --secondary-color: #455c6ccf;
+
+  --primary-font-color: white;
+  --secondary-font-color: silver;
+
+  --background-color-1: rgba(248, 248, 248, 0.097);
+  --background-color-2: rgba(2, 4, 9, 0.72);
+  --backdrop-filter: blur(30px);
+  --box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  --border: 1px solid var(--background-color-1);
+  --border-radius: 10px;
+
+  --main-gap: 1rem;
+}
+
+@media screen and (min-width: 796px) {
+  :root {
+    --main-gap: 2rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  color: white;
+  font-size: 12px;
+  font-family: custom-regular, sans-serif;
+  padding: 0;
+  margin: 0;
+  overscroll-behavior: none;
+
+  @media screen and (min-width: 600px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1100px) and (min-height: 1280px) {
+    max-height: 100vh;
+  }
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-color-1);
+  overflow-x: hidden;
+
+  @media screen and (min-width: 1100px) and (min-height: 1280px) {
+    position: absolute;
+  }
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  z-index: 2;
+  color: inherit;
+  text-decoration: none;
+}
+
+a > button {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 1100px) {
+  a > button {
+    font-size: 1.18rem;
+    color: rgb(255, 255, 255);
+  }
+}
+
+a > button:hover,
+a > button:active {
+  cursor: pointer;
+  filter: brightness(1.15);
+  background-color: #077b8a;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+a:hover ~ .overlay,
+a:active ~ .overlay {
+  opacity: 0.2;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+h1,
+p {
+  z-index: 2;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-family: custom-bold;
+  color: inherit;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: custom-bold, sans-serif;
+  letter-spacing: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  max-width: 72ch;
+  font-size: 1rem;
+  font-family: custom-regular;
+  margin: 0;
+  padding: 0;
+  text-wrap: balance;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: custom-light;
+  outline: transparent;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 4px;
+}
+
+pre {
+  padding: 0;
+  margin: 0;
+}
