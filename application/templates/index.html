@@ -78,24 +78,43 @@
             <div id="summary">
               <h2>Summary</h2>
               <p>
-                This API is built atop a hawaii.sqlite database. The database
-                features Hawaii climate data between January 2010 and August
-                2017. An analysis of said data can be found in the form of a
-                Jupyter Notebook. You can perform your own analysis by querying
-                one of four available HTTP routes. You can also visit the
-                documentation.
+                This API features Hawaii climate data between January 2010 and
+                August 2017. You can perform your own analysis by querying one
+                of four available HTTP routes. You can also visit the
+                documentation to view the source code and raw data.
               </p>
-              <p>
-                Aggregates can be queried via GET request at the aggregate route
-                like so
-                <a
-                  id="dynamic-example"
-                  href="/api/v2/aggregate/2010-01-01/2017-08-23"
-                  title="Returns aggregate temperature data given a specified start and end date between 2010-01-01 and 2017-08-23."
-                >
-                  GET @ /api/v2/aggregate/2010-01-01/2017-08-23
-                </a>
-              </p>
+              <div>
+                <h3>Example route</h3>
+                <div id="example-container">
+                  <p class="description">
+                    Aggregates temperature observation data.
+                  </p>
+                  <div>
+                    <span class="type">GET</span>
+                    <a
+                      id="dynamic-example"
+                      class="path"
+                      href="/api/v2/aggregate/2010-01-01/2017-08-22"
+                      title="Returns aggregate temperature data given a specified start and end date between 2010-01-01 and 2017-08-23."
+                    >
+                      /api/v2/aggregate/{p1*}/{p2}
+                    </a>
+                  </div>
+                  <div>
+                    <span class="label">Path param 1: </span
+                    ><span class="value">{YYYY-MM-DD}</span>
+                  </div>
+                  <div>
+                    <span class="label">Path param 2: </span
+                    ><span class="value">{YYYY-MM-DD}</span>
+                  </div>
+                  <pre><code>{
+  "avg": 73.09,
+  "max": 87.0,
+  "min": 53.0
+}</code></pre>
+                </div>
+              </div>
             </div>
           </div>
         </div>

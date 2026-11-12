@@ -9,6 +9,7 @@ def calc_temp(start_date, end_date):
     """Returns the minimum, average, and maximum temperatures for that range of dates
     This function will accept start date and end date in the format '%Y-%m-%d'
     """
+    # NOTE: There is a bug here when supplying the last date as the end date.
     x = (
         session.query(
             func.min(Measurement.tobs),
