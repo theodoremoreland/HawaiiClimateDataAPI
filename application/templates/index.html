@@ -8,7 +8,7 @@
       name="description"
       content="A REST API for Hawaii climate data between Jan, 2010 and Aug, 2017"
     />
-    <title>Hawaii Climate Data API</title>
+    <title>Hawaii Climate API</title>
     <link rel="icon" type="image/png" href="../static/images/hawaii.png" />
     <link rel="stylesheet" href="../static/css/waves.css" />
     <link rel="stylesheet" href="../static/css/index.css" />
@@ -75,25 +75,32 @@
                 </li>
               </ul>
             </nav>
-            <ul id="summary">
-              <li>adgadgagsag dgad g adg adgdg adg adg agag adg</li>
-              <li>adgadgagsag dgad g adg adgdg adg adg agag adg</li>
-              <li>adgadgagsag dgad g adg adgdg adg adg agag adg</li>
-              <li>adgadgagsag dgad g adg adgdg adg adg agag adg</li>
-              <li>adgadgagsag dgad g adg adgdg adg adg agag adg</li>
-              <li>adgadgagsag dgad g adg adgdg adg adg agag adg</li>
-              <li>adgadgagsag dgad g adg adgdg adg adg agag adg</li>
-              <li>adgadgagsag dgad g adg adgdg adg adg agag adg</li>
-              <li>adgadgagsag dgad g adg adgdg adg adg agag adg</li>
-              <li>adgadgagsag dgad g adg adgdg adg adg agag adg</li>
-              <li>adgadgagsag dgad g adg adgdg adg adg agag adg</li>
-              <li>adgadgagsag dgad g adg adgdg adg adg agag adg</li>
-              <li>adgadgagsag dgad g adg adgdg adg adg agag adg</li>
-            </ul>
+            <div id="summary">
+              <h2>Summary</h2>
+              <p>
+                This API is built atop a hawaii.sqlite database. The database
+                features Hawaii climate data between January 2010 and August
+                2017. An analysis of said data can be found in the form of a
+                Jupyter Notebook. You can perform your own analysis by querying
+                one of four available HTTP routes. You can also visit the
+                documentation.
+              </p>
+              <p>
+                Aggregates can be queried via GET request at the aggregate route
+                like so
+                <a
+                  id="dynamic-example"
+                  href="/api/v2/aggregate/2010-01-01/2017-08-23"
+                  title="Returns aggregate temperature data given a specified start and end date between 2010-01-01 and 2017-08-23."
+                >
+                  GET @ /api/v2/aggregate/2010-01-01/2017-08-23
+                </a>
+              </p>
+            </div>
           </div>
         </div>
         <div id="title-container">
-          <h1>Hawaii Climate Data API</h1>
+          <h1>Hawaii Climate API</h1>
           <p>A JSON based REST API</p>
         </div>
       </header>
@@ -103,8 +110,8 @@
           <pre>
             <code>
 {
-  "2016-08-29": [
-    0.9,
+  "2016-08-24": [
+    1.45,
     ...
   ],
   ...
@@ -121,6 +128,17 @@
         </li>
         <li class="card">
           <h2>TOBS</h2>
+          <pre>
+            <code>
+{
+  "2016-08-24": [
+    74.0,
+    ...
+  ],
+  ...
+}
+            </code>
+          </pre>
           <a
             title="Returns temperature observation data (tobs) for the last
                   12 months of data-set. Represents a temperature for each day."
@@ -131,6 +149,17 @@
         </li>
         <li class="card">
           <h2>STATIONS</h2>
+          <pre>
+            <code>
+[
+  {
+    "station": "USC00519281",
+    "station_id": 2772
+  },
+  ...
+]
+            </code>
+          </pre>
           <a
             title="Returns weather station IDs of weather stations
                   used in data."

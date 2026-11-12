@@ -1,4 +1,4 @@
-# Hawaii Climate Data API
+# Hawaii Climate API
 
 For this project, I used Python to perform analysis on a climate database before mapping said database to a custom built REST-API. The database features Hawaii Climate data between `2010-01-01` and `2017-08-23`. I used Python and SQLAlchemy to do climate analysis and exploration on a hawaii.sqlite database, all analysis was completed using SQLAlchemy ORM queries, Pandas, Matplotlib, and Jupyter Notebook. The REST-API was developed using Python (Flask).
 
