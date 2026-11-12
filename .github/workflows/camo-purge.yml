@@ -1,0 +1,18 @@
+name: Camo Purge
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "README.md"
+      - "presentation/**"
+
+jobs:
+  Camo-Purge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+
+    steps:
+      - name: Use camo purge action
+        uses: kevincobain2000/action-camo-purge@0b70f4d64c9828aace7bbbf1931a646957734ef3
